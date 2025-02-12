@@ -11,7 +11,7 @@ This project was conducted as part of my **final Deep Learning project** (1st se
 GANs are widely used for image generation, but they suffer from **mode collapse** and **sample quality issues**.  
 To address this, we implement and refine **Discriminator Rejection Sampling (DRS)**, a technique that selectively **rejects low-quality samples** based on the discriminator’s confidence score.
 
-🔗 **Related Research:**  
+🔗 **Inspired by the following research papers:**  
 - **Goodfellow et al. (2014):** Generative Adversarial Networks  
 - **Azadi et al. (2019):** Discriminator Rejection Sampling  
 - **Salimans et al. (2016):** Improved GAN training techniques  
