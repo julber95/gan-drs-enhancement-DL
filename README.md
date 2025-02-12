@@ -106,19 +106,3 @@ where:
 
 ---
 
-## 📂 Repository Structure
-
-📁 `notebooks/` → Jupyter notebooks for training & evaluation  
-📁 `data/` → MNIST dataset files  
-📁 `models/` → Trained GAN weights  
-📁 `reports/` → Final report & research findings  
-📄 `Rapport.pdf` → Project documentation  
-📄 `Support_Presentation.pdf` → Project slides  
-
----
-
-## 📌 Installation & Usage
-
-### **1️⃣ Install Dependencies**
-```bash
-pip install -r requirements.txt
