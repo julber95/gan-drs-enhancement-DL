@@ -80,22 +80,5 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 
 Since GAN evaluation is **non-trivial**, we use **Precision-Recall AUC** to measure sample quality.
 
-\[
-PR-AUC = \sum_n (Recall_n - Recall_{n-1}) \times Precision_n
-\]
 
-where:
-- **Precision** = TP / (TP + FP)
-- **Recall** = TP / (TP + FN)
-
-**Final Performance Results:**
-| Method | Precision | Recall | PR-AUC |
-|--------|----------|--------|--------|
-| Vanilla GAN | 0.48 | 0.21 | 0.25 |
-| Basic DRS | 0.51 | 0.22 | 0.28 |
-| Advanced DRS | 0.52 | 0.22 | 0.30 |
-| Soft Truncation | 0.55 | 0.16 | 0.32 |
-| **Adaptive Truncation (Best)** | **0.53** | **0.24** | **0.35** |
-
----
 
