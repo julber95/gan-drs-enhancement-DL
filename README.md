@@ -42,8 +42,8 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 
 ### **1️⃣ Basic Discriminator Rejection Sampling (DRS)**
 - **Filters generated samples** based on discriminator confidence
-- Samples with higher \ D(x) \ values are **more likely to be accepted**
-- Uses **global normalization factor** \( M = \max D(x) \)  
+- Samples with higher D(x) values are **more likely to be accepted**
+- Uses **global normalization factor** M = max D(x)  
 
 🔹 **Limitation:** Rejection is too strict, leading to loss of diversity.
 
@@ -51,9 +51,7 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 
 ### **2️⃣ Advanced DRS with Ratio-Based Filtering**
 - Introduces a better ratio for rejection:  
-  \[
-  P_{\text{accept}}(x) = \frac{D(x)}{1 - D(x) + \epsilon}
-  \]
+
 - Improves diversity by dynamically recalculating the rejection threshold per batch.
 
 🔹 **Result:** Balances **quality vs. diversity** trade-off.
