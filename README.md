@@ -1,6 +1,6 @@
 # Improving GANs with Discriminator Rejection Sampling (DRS)
 
-**A deep learning project exploring techniques to improve Generative Adversarial Networks (GANs) through Discriminator Rejection Sampling (DRS) and soft truncation.**  
+**A deep learning project exploring techniques to improve Generative Adversarial Networks (GANs) through Discriminator Rejection Sampling (DRS) and truncation.**  
 The goal is to enhance the **diversity and quality** of generated samples by leveraging the discriminator’s confidence scores to filter outputs.
 
 ---
