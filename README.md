@@ -60,8 +60,7 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 
 ### **3️⃣ Soft Truncation on Latent Space**
 - **Idea:** Limit extreme values in the latent space \( z \)
-- **Implementation:**  
-  z = z * scaling_factor
+- **Implementation:**  z = z * scaling_factor
 - Helps prevent **outlier samples** from degrading GAN performance.
 
 🔹 **Limitation:** Reduced diversity due to over-filtering.
