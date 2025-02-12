@@ -50,7 +50,7 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 ---
 
 ### **2️⃣ Advanced DRS with Ratio-Based Filtering**
-- Introduces a better ratio for rejection:  
+- Introduces a better ratio for rejection  
 
 - Improves diversity by dynamically recalculating the rejection threshold per batch.
 
