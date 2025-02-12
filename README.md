@@ -7,14 +7,9 @@ The goal is to enhance the **diversity and quality** of generated samples by lev
 
 ## Context
 
-This project was conducted as part of our **final Deep Learning project** (1st semester) at **Paris Dauphine University**.  
+This project was conducted as part of my **final Deep Learning project** (1st semester) at **Paris Dauphine University**.  
 GANs are widely used for image generation, but they suffer from **mode collapse** and **sample quality issues**.  
 To address this, we implement and refine **Discriminator Rejection Sampling (DRS)**, a technique that selectively **rejects low-quality samples** based on the discriminator’s confidence score.
-
-🚀 **🏆 Our contributions:**
-- **Implemented various DRS methods** (Basic, Advanced, Soft Truncation, Adaptive Truncation)
-- **Optimized GAN sample selection** using discriminator confidence scores
-- **Improved image quality and diversity** compared to standard GAN training
 
 🔗 **Related Research:**  
 - **Goodfellow et al. (2014):** Generative Adversarial Networks  
@@ -23,7 +18,7 @@ To address this, we implement and refine **Discriminator Rejection Sampling (DRS
 
 ---
 
-## 📊 Dataset & Model Overview
+## Dataset & Model Overview
 
 The project is based on the **MNIST dataset**, a collection of handwritten digit images.  
 We train a **fully connected GAN** with a **3-layer discriminator** and a **4-layer generator**.
