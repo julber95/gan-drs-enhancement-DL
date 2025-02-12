@@ -61,9 +61,7 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 ### **3️⃣ Soft Truncation on Latent Space**
 - **Idea:** Limit extreme values in the latent space \( z \)
 - **Implementation:**  
-  \[
-  z = z \times 0.7
-  \]
+  z = z * scaling_factor
 - Helps prevent **outlier samples** from degrading GAN performance.
 
 🔹 **Limitation:** Reduced diversity due to over-filtering.
@@ -71,10 +69,8 @@ We train a **fully connected GAN** with a **3-layer discriminator** and a **4-la
 ---
 
 ### **4️⃣ Adaptive Soft Truncation (Final Version)**
-- Dynamically adjusts truncation based on discriminator score:
-  \[
-  \text{scale} = \frac{D(x)}{1 - D(x) + \epsilon}
-  \]
+- Dynamically adjusts truncation based on discriminator score
+
 - Higher quality samples remain unmodified, **while lower quality samples get truncated**.
 
 🔹 **Final Improvement:** Achieves **best balance between sample diversity & quality**.
